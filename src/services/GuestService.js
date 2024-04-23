@@ -69,7 +69,7 @@ const newGuest = async (profile) => {
 }
 
 const getReservation = async () => {
-    const res = await axios.get(API_URL + '/reservation', { headers: getAuthHeaders() });
+    const res = await axios.get(API_URL + '/reservations', { headers: getAuthHeaders() });
     if (res.status === 200) {
         return res.data;
     } else {
