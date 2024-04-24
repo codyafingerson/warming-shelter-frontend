@@ -18,7 +18,7 @@ const routes = [
     {path: '/dashboard', component: Dashboard, meta: {requiresAuth: true}},
     {path: '/enterguests', component: EnterGuests, meta: {requiresAuth: true}},
     {path: '/checkin', component: Checkin, meta: {requiresAuth: true}},
-    {path: '/*', component: Error, meta: {requiresAuth: true}},
+    {path: '*', component: Error, meta: {requiresAuth: true}},
     {path: '/viewallguests', component: ViewAllGuests, meta: {requiresAuth: true}},
     {path: '/currentguests', component: CurrentGuests, meta: {requiresAuth: true}},
     {path: '/resources', component: Resources, meta: {requiresAuth: true}},
